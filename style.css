@@ -23,4 +23,6 @@ h2 {
 
 .box-item button {
   cursor: pointer;
+  border: none;
+  padding: 10px 20px;
 }

@@ -1,4 +1,4 @@
-let btn = document.querySelectorAll("button")
+let btn = document.querySelector("#h2");
 btn.onclick =() =>{
  console.log("Aamre Kik Dise");
 //     let a = 25;

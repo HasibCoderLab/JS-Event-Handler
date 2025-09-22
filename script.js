@@ -23,8 +23,10 @@ console.log(evt.clientX, evt.clientY);
 
 // ============= use EventListener........ ============
 let btns = document.querySelectorAll("button");
+
 btns.forEach((clickBtn) => {
 clickBtn.addEventListener("click" , () => {
+    // clickBtn.innerText = "Amare Click Dise"
 console.log("Amare Click Dise ");
 
 });
@@ -35,8 +37,8 @@ console.log("Amare Click Dise ");
 let divs = document.querySelectorAll("div");
 divs.forEach((hoverDivs) => {
     hoverDivs.addEventListener("mouseover" , () => {
-console.log("Amare Teach korse");
-
+console.log("Amare Teach korse  😠 ");
+console.log(hoverDivs.target);
 });
 });
 

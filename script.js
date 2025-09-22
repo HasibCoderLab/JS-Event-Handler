@@ -27,14 +27,18 @@ let btns = document.querySelectorAll("button");
 btns.forEach((clickBtn) => {
 clickBtn.addEventListener("click" , () => {
     // clickBtn.innerText = "Amare Click Dise"
-console.log("Amare Click Dise ");
+    
+    let newH2 = document.createElement("h2");
+    newH2.innerText = " Hello";
+    clickBtn.parentElement.append(newH2);
+console.log(newH2);
 
 });
 });
 
 
 // ============= use EventListener...to  Mouse Over..... ============
-let divs = document.querySelectorAll("div");
+let divs = document.querySelectorAll("divs")
 divs.forEach((hoverDivs) => {
     hoverDivs.addEventListener("mouseover" , () => {
 console.log("Amare Teach korse  😠 ");

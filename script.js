@@ -33,8 +33,20 @@ btns.forEach((clickBtn) => {
 });
 
 
-// ============== * increment Hello *  + create Hello           ============    
 
+// ============= use EventListener...to  Mouse Over..... ============
+let divs = document.querySelectorAll("divs")
+divs.forEach((hoverDivs) => {
+    hoverDivs.addEventListener("mouseover", () => {
+        console.log("Amare Teach korse  😠");
+        console.log(hoverDivs.target);
+    });
+});
+
+
+// *============== * increment Hello *  + create Hello           ============    
+// **
+// ***
 let allBtns = document.querySelectorAll("button");
 let counter = 1;
 
@@ -49,15 +61,3 @@ btns.forEach((clickBtn) => {
         counter++;
     });
 });
-
-
-
-// ============= use EventListener...to  Mouse Over..... ============
-let divs = document.querySelectorAll("divs")
-divs.forEach((hoverDivs) => {
-    hoverDivs.addEventListener("mouseover", () => {
-        console.log("Amare Teach korse  😠");
-        console.log(hoverDivs.target);
-    });
-});
-

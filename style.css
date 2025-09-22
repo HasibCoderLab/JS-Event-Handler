@@ -1,14 +1,26 @@
-.conteiner{
+.container {
     display: flex;
     justify-content: space-around;
     gap: 25px;
 }
-.box{
+
+.box-item {
+    /* margin: 25px; */
     height: 250px;
     width: 250px;
     border: 2px solid red;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /*  vertical center */
+    align-items: center; /* horizontal cente */
+    gap: 25px;
 }
-h2{
-    text-align: center;
-    padding: 25px;
+
+h2 {
+    /* text-align: center; */
+    margin: 0;
+}
+
+.box-item button {
+  cursor: pointer;
 }

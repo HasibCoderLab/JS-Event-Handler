@@ -4,5 +4,14 @@ btn.onclick =() =>{
     let a = 25;
 a++;
 console.log(a);
-
 };
+
+// use EventListener........
+let btns = document.querySelectorAll("button");
+btns.forEach((clickBtn) => {
+clickBtn.addEventListener("click" , () => {
+console.log("Amare Click Dise ");
+
+});
+});
+

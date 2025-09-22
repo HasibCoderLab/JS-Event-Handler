@@ -56,7 +56,7 @@ btns.forEach((clickBtn) => {
 let divs = document.querySelectorAll("divs")
 divs.forEach((hoverDivs) => {
     hoverDivs.addEventListener("mouseover", () => {
-        console.log("Amare Teach korse  😠 ");
+        console.log("Amare Teach korse  😠");
         console.log(hoverDivs.target);
     });
 });

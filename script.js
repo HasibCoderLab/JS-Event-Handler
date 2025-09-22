@@ -1,16 +1,41 @@
 let btn = document.querySelector("#h2");
-btn.onclick =() =>{
+btn.onclick =() => {
  console.log("Aamre Kik Dise");
     let a = 25;
 a++;
 console.log(a);
 };
 
-// use EventListener........
+// ============ Even Object =============== 
+let btn1 = document.querySelector("#h2");
+btn1.onclick =(evt) => {
+//  console.log("Aamre Kik Dise");
+//     let a = 25;
+// a++;
+console.log(evt);
+console.log(evt.target);
+
+console.log(evt.type);
+console.log(evt.clientX, evt.clientY);
+
+};
+
+
+// ============= use EventListener........ ============
 let btns = document.querySelectorAll("button");
 btns.forEach((clickBtn) => {
 clickBtn.addEventListener("click" , () => {
 console.log("Amare Click Dise ");
+
+});
+});
+
+
+// ============= use EventListener...to  Mouse Over..... ============
+let divs = document.querySelectorAll("div");
+divs.forEach((hoverDivs) => {
+    hoverDivs.addEventListener("mouseover" , () => {
+console.log("Amare Teach korse");
 
 });
 });
